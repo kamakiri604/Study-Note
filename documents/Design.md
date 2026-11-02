@@ -5,7 +5,7 @@
 ```mermaid
 flowchart TD
    subgraph 使用者
-      A({"調べたことを登録する"})
+      A(["調べたことを登録する"])
       B["検索する"]
    end
 
