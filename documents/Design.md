@@ -33,5 +33,17 @@ flowchart TD
 
 ## 3.ワイヤーフレーム
 
+### 検索画面
+![検索画面](wireframes/search.png)
+
+### 検索画面（検索結果なし）
+![検索画面（検索結果なし）](wireframes/search-empty.png)
+
+### 登録画面
+![登録画面](wireframes/register.png)
+
+### 詳細画面
+![詳細画面](wireframes/detail.png)
+
 
 ## 4.テーブル定義書
