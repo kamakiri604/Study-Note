@@ -59,6 +59,7 @@ flowchart TD
 | テーブル名 | 概要 |
 | --- | --- |
 | notes | ノート |
+| tags | タグ |
 
 #### ノートテーブル
 
@@ -66,8 +67,15 @@ flowchart TD
 | --- | --- | --- | --- | --- | --- | --- |
 | ノートID | note_id | BIGINT | - | 不可 | PK | 自動採番 |
 | タイトル | title | VARCHAR	| 100 |	不可 |　| - |
-| タグ名 | tag_name | VARCHAR | 100 | 不可 | | - |
 | 内容	| body |	TEXT | | 不可 | | - |
 | 登録日時 | created_at | DATETIME | - | 不可 | | 現在日時 |
 | 更新日時 | updated_at | DATETIME | - | 不可 | | 現在日時 |
 
+#### タグテーブル
+
+| 論理名 | 物理名 | データ型 | 桁数 | NULL | キー | デフォルト |
+| --- | --- | --- | --- | --- | --- | --- |
+| タグID | tag_id | BIGINT | - | 不可 | PK | 自動採番 |
+| タグ名 | tag_name | VARCHAR | 100 | 不可 | | - |
+| 登録日時 | created_at | DATETIME | - | 不可 | | 現在日時 |
+| 更新日時 | updated_at | DATETIME | - | 不可 | | 現在日時 |
