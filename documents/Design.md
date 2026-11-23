@@ -79,3 +79,13 @@ flowchart TD
 | タグ名 | tag_name | VARCHAR | 100 | 不可 | | - |
 | 登録日時 | created_at | DATETIME | - | 不可 | | 現在日時 |
 | 更新日時 | updated_at | DATETIME | - | 不可 | | 現在日時 |
+
+#### ノートタグテーブル
+
+| 論理名 | 物理名 | データ型 | 桁数 | NULL | キー | デフォルト |
+| --- | --- | --- | --- | --- | --- | --- |
+| タグID | tag_id | BIGINT | - | 不可 | PK,FK | 自動採番 |
+| ノートID | note_tag | BIGINT | - | 不可 | PK,FK | 自動採番 |
+
+## ER図
+
