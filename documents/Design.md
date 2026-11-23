@@ -87,5 +87,23 @@ flowchart TD
 | タグID | tag_id | BIGINT | - | 不可 | PK,FK | 自動採番 |
 | ノートID | note_tag | BIGINT | - | 不可 | PK,FK | 自動採番 |
 
-## ER図
+## 5.ER図
 
+```mermaid
+erDiagram
+  notes {
+    bigint id PK
+    bigint user_id FK
+    varchar title
+    text body
+    varchar source_url "空欄OK"
+  }
+  note_tag {
+    bigint note_id PK, FK
+    bigint tag_id PK, FK
+  }
+  tags {
+    bigint id PK
+    varchar name UK "表記ゆれ防止"
+  }
+```
