@@ -91,12 +91,14 @@ flowchart TD
 
 ```mermaid
 erDiagram
+%% テーブル同士のつながり
+  notes ||--o{ note_tag : "付ける"
+  tags  ||--o{ note_tag : "付けられる"
+
   notes {
     bigint id PK
-    bigint user_id FK
     varchar title
     text body
-    varchar source_url "空欄OK"
   }
   note_tag {
     bigint note_id PK, FK
@@ -104,6 +106,6 @@ erDiagram
   }
   tags {
     bigint id PK
-    varchar name UK "表記ゆれ防止"
+    varchar name 
   }
 ```
